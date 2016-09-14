@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0372D1411D88F19E0097361A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372D1401D88F19E0097361A /* AppDelegate.swift */; };
-		0372D1431D88F19F0097361A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372D1421D88F19F0097361A /* ViewController.swift */; };
+		0372D1431D88F19F0097361A /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372D1421D88F19F0097361A /* WeatherVC.swift */; };
 		0372D1461D88F19F0097361A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0372D1441D88F19F0097361A /* Main.storyboard */; };
 		0372D1481D88F19F0097361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0372D1471D88F19F0097361A /* Assets.xcassets */; };
 		0372D14B1D88F19F0097361A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0372D1491D88F19F0097361A /* LaunchScreen.storyboard */; };
+		6196928FD8D87C75A975440F /* Pods_RainShine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47A36F2C29FC72271886E21 /* Pods_RainShine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0372D13D1D88F19E0097361A /* RainShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0372D1401D88F19E0097361A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0372D1421D88F19F0097361A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0372D1421D88F19F0097361A /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		0372D1451D88F19F0097361A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0372D1471D88F19F0097361A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0372D14A1D88F19F0097361A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0372D14C1D88F19F0097361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47A36F2C29FC72271886E21 /* Pods_RainShine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainShine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31BB15D6021E15554554241 /* Pods-RainShine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainShine.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainShine/Pods-RainShine.release.xcconfig"; sourceTree = "<group>"; };
+		F4062C66FE45E4E50180961F /* Pods-RainShine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainShine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainShine/Pods-RainShine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6196928FD8D87C75A975440F /* Pods_RainShine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0372D13F1D88F19E0097361A /* RainShine */,
 				0372D13E1D88F19E0097361A /* Products */,
+				13A201ACDB7038C2681598B4 /* Pods */,
+				A1742DCFBA3EE684A7F67CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,55 @@
 		0372D13F1D88F19E0097361A /* RainShine */ = {
 			isa = PBXGroup;
 			children = (
-				0372D1401D88F19E0097361A /* AppDelegate.swift */,
-				0372D1421D88F19F0097361A /* ViewController.swift */,
+				03A517741D88F97200594963 /* Model */,
+				03A517731D88F96900594963 /* View */,
+				03A517721D88F95400594963 /* Controller */,
 				0372D1441D88F19F0097361A /* Main.storyboard */,
+				0372D1401D88F19E0097361A /* AppDelegate.swift */,
 				0372D1471D88F19F0097361A /* Assets.xcassets */,
 				0372D1491D88F19F0097361A /* LaunchScreen.storyboard */,
 				0372D14C1D88F19F0097361A /* Info.plist */,
 			);
 			path = RainShine;
+			sourceTree = "<group>";
+		};
+		03A517721D88F95400594963 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0372D1421D88F19F0097361A /* WeatherVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03A517731D88F96900594963 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		03A517741D88F97200594963 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		13A201ACDB7038C2681598B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4062C66FE45E4E50180961F /* Pods-RainShine.debug.xcconfig */,
+				E31BB15D6021E15554554241 /* Pods-RainShine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1742DCFBA3EE684A7F67CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C47A36F2C29FC72271886E21 /* Pods_RainShine.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0372D14F1D88F19F0097361A /* Build configuration list for PBXNativeTarget "RainShine" */;
 			buildPhases = (
+				0A7A29B37095BB66F97ED73A /* [CP] Check Pods Manifest.lock */,
 				0372D1391D88F19B0097361A /* Sources */,
 				0372D13A1D88F19B0097361A /* Frameworks */,
 				0372D13B1D88F19B0097361A /* Resources */,
+				E101CAD4DB1899321AFF2877 /* [CP] Embed Pods Frameworks */,
+				80080671DCD475742E4ADA69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +183,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A7A29B37095BB66F97ED73A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80080671DCD475742E4ADA69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainShine/Pods-RainShine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E101CAD4DB1899321AFF2877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainShine/Pods-RainShine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0372D1391D88F19B0097361A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0372D1431D88F19F0097361A /* ViewController.swift in Sources */,
+				0372D1431D88F19F0097361A /* WeatherVC.swift in Sources */,
 				0372D1411D88F19E0097361A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -257,10 +358,13 @@
 		};
 		0372D1501D88F19F0097361A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4062C66FE45E4E50180961F /* Pods-RainShine.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3MF58BS4U;
 				INFOPLIST_FILE = RainShine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Derek.RainShine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,10 +374,13 @@
 		};
 		0372D1511D88F19F0097361A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31BB15D6021E15554554241 /* Pods-RainShine.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3MF58BS4U;
 				INFOPLIST_FILE = RainShine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Derek.RainShine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +407,7 @@
 				0372D1511D88F19F0097361A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
