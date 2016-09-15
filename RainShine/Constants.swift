@@ -16,3 +16,5 @@ let API_KEY = "1061dd97af6a279dd6226168ea0acf63"
 
 let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITITUDE)33.9\(LONGITUDE)-117.3\(APP_ID)\(API_KEY)"
 
+// this tells the function when the data is done downloading
+typealias DownloadComplete = () -> ()
