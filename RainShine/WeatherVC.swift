@@ -54,11 +54,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             currentWeather.downloadWeatherDetails {
                 self.downloadForecastData {
                     self.updateMainUI()
-                    
                 }
             }
-
-            
         } else {
             locationManager.requestWhenInUseAuthorization()
             locationAuthStatus()
